@@ -1,44 +1,109 @@
 # Cellular Automata
 
 Conway's Game of Life implemented using:
+
 - CellPyLib
 - Pure Python + Pygame
 
-This project explores emergence, cellular automata,
-simulation systems, and procedural graphics.
+---
 
-![Demo](assets/cellpylib_demo.gif)
-![Demo](assets/pygame_demo.gif)
+## Demos
 
-Cellular automata are grid-based computational systems
-where simple local rules create complex emergent behavior.
+### CellPyLib Version
 
-This project implements Conway's Game of Life,
-one of the most famous cellular automata systems.
+![CellPyLib Demo](assets/cellpylib_demo.gif)
 
-***
+### Pygame From-Scratch Version
 
-## Rules
+![Pygame Demo](assets/pygame_demo.gif)
+
+---
+
+## What is Cellular Automata?
+
+Cellular automata are grid-based computational systems where
+simple local rules create complex emergent behavior.
+
+This project implements **Conway's Game of Life**,
+one of the most famous cellular automata systems ever created.
+
+The simulation demonstrates how:
+- simple rules,
+- local interactions,
+- and discrete states
+
+can generate highly complex global patterns.
+
+---
+
+## Conway's Game of Life Rules
+
+Each cell exists in one of two states:
+
+- Alive
+- Dead
+
+At every generation:
 
 - Alive cell with fewer than 2 neighbors dies
 - Alive cell with 2 or 3 neighbors survives
 - Alive cell with more than 3 neighbors dies
 - Dead cell with exactly 3 neighbors becomes alive
 
-![CellPyLib](assets/cellpylib_demo.png)
-![Pygame](assets/pygame_demo.png)
+---
 
-***
+## Implementations
+
+### 1. CellPyLib Implementation
+
+High-level implementation using the CellPyLib cellular automata library.
+
+Features:
+- Random initialization
+- Text injection
+- Animated evolution
+- Fast prototyping
+
+![CellPyLib Screenshot](assets/cellpylib_demo.png)
+
+### 2. Pure Python + Pygame Implementation
+
+Low-level implementation built completely from scratch using Pygame.
+
+Features:
+- Manual Conway rule engine
+- Neighbor counting
+- Real-time rendering
+
+![Pygame Screenshot](assets/pygame_demo.png)
+
+---
 
 ## Project Structure
 
+```text
 cellular-automata-lab/
+│
+├── README.md
+├── requirements.txt
+│
 ├── cellpylib_version/
+│   └── mothers_day.py
+│
 ├── pygame_from_scratch/
+│   └── conways_game_of_life.py
+│
 ├── assets/
+│   ├── cellpylib_demo.gif
+│   ├── pygame_demo.gif
+│   ├── cellpylib_demo.png
+│   └── pygame_demo.png
+│
 └── docs/
+```
 
-***
+---
+
 
 ## Future Improvements
 
@@ -49,5 +114,7 @@ cellular-automata-lab/
 - Pattern loader
 - Music-reactive automata
 - Performance optimizations
+- Pattern saving/loading
+- Interactive drawing tools
 
-***
+---
