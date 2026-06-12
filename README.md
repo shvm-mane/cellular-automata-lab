@@ -1,4 +1,4 @@
-# Cellular Automata
+# Cellular Automata Simulation
 
 Conway's Game of Life implemented using:
 
